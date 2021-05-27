@@ -1,1 +1,9 @@
-<p>search works!</p>
+<!-- [(ngModel)] - Two-way binding, field is both input and output -->
+<form>
+  <input
+    type="text"
+    [(ngModel)]="filter"
+    name="filter"
+    (ngModelChange)="onInputChange($event)"
+  />
+</form>
